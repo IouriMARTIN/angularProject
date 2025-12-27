@@ -1,0 +1,5 @@
+<h2>{{ post?.title }}</h2>
+<p>{{ post?.body }}</p>
+
+<h5 class="mt-4">Commentaires</h5>
+<app-comment-card *ngFor="let c of comments" [comment]="c"></app-comment-card>

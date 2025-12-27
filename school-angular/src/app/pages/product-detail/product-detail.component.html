@@ -1,0 +1,8 @@
+<form [formGroup]="form" (ngSubmit)="save()">
+  <input class="form-control mb-2" formControlName="title">
+  <input class="form-control mb-2" formControlName="price">
+  <textarea class="form-control mb-2" formControlName="description"></textarea>
+
+  <button class="btn btn-primary">Modifier</button>
+  <button class="btn btn-danger ms-2" (click)="delete()">Supprimer</button>
+</form>

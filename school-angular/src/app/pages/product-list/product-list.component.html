@@ -1,0 +1,9 @@
+<a class="btn btn-success mb-3" routerLink="/products/new">Nouveau produit</a>
+
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between"
+      *ngFor="let p of products">
+    {{ p.title }}
+    <a class="btn btn-sm btn-primary" [routerLink]="['/products', p.id]">Voir</a>
+  </li>
+</ul>
